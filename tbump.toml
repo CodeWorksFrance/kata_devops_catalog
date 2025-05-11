@@ -1,0 +1,26 @@
+github_url = "https://github.com/CodeWorksFrance/kata_devops_catalog"
+[version]
+current = "1.0.0"
+
+regex = '''
+  (?P<major>\d+)
+  \.
+  (?P<minor>\d+)
+  \.
+  (?P<patch>\d+)
+  '''
+
+[git]
+message_template = "Bump to {new_version}"
+tag_template = "v{new_version}"
+
+# For each file to patch, add a [[file]] config
+# section containing the path of the file, relative to the
+# tbump.toml location.
+[[file]]
+src = "package.json"
+search = '"version":'
+
+[[before_commit]]
+name = "generate package lock"
+cmd = "npm install"
