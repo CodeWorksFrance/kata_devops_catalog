@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/CodeWorksFrance/kata_devops_catalog"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "jest"
   },
