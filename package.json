@@ -1,7 +1,7 @@
 {
   "name": "@codeworksfrance/catalog",
-  "version": "1.0.5",
-  "description": "A simple javasript library reprensenting a book store catalog",
+  "version": "1.0.7",
+  "description": "A simple javascript library reprensenting a book store catalog",
   "license": "MIT",
   "author": "CodeWorks",
   "main": "index.js",
